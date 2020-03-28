@@ -3,11 +3,13 @@ import random
 lottery_nums = list(range(1, 91))
 
 ticket_1 = random.sample(lottery_nums, k=15)
+ticket_1.sort()
 print(f"Ticket_1 is: \n{ticket_1[0:5]}\n{ticket_1[5:10]}\n{ticket_1[10:15]}")
 
 print("")
 
 ticket_2 = random.sample(lottery_nums, k=15)
+ticket_2.sort()
 print(f"Ticket_2 is: \n{ticket_2[0:5]}\n{ticket_2[5:10]}\n{ticket_2[10:15]}")
 
 print("")
